@@ -69,5 +69,68 @@ level: 2
 | \{行番号\} + <kbd>G</kbd>      | 指定行に移動     |
 | <kbd>Ctrl</kbd> + <kbd>o</kbd> | 直前の場所に戻る |
 
-- 指定行に移動 \{行番号\} + <kbd>G</kbd>
-- 直前の場所に戻る <kbd>Ctrl</kbd> + <kbd>o</kbd>
+- モーション(移動)
+
+  - ←↓↑→ <kbd>h</kbd> <kbd>j</kbd><kbd>k</kbd><kbd>l</kbd>
+  - 次の単語の先頭(記号は単語として認識) <kbd>w</kbd>
+  - 次のブロックの先頭 <kbd>W</kbd>
+  - 現在か前の単語の先頭 <kbd>b</kbd>
+  - 前のブロックの先頭 <kbd>B</kbd>
+  - 現在か次の単語の末尾<kbd>e</kbd>
+  - 次のブロックの末尾<kbd>E</kbd>
+  - 前の単語の末尾<kbd>g</kbd> + <kbd>e</kbd>
+  - 行の先頭<kbd>0</kbd>
+  - 行の末尾`$` <kbd>Shift</kbd> + <kbd>4</kbd>
+  - 対応する括弧`%` <kbd>Shift</kbd> + <kbd>5</kbd>
+  - 上の空行 <kbd>\{</kbd>
+  - 下の空行 <kbd>\}</kbd>
+  - 指定行 \{行番号\} + <kbd>G</kbd>
+  - 同一行の右側の文字<kbd>f</kbd> + \{文字\}
+  - 同一行の左側の文字<kbd>F</kbd> + \{文字\}
+  - 同一行の右側の文字の直前<kbd>t</kbd> + \{文字\}
+  - 同一行の左側の文字の直前<kbd>T</kbd> + \{文字\}
+  - 次の文字 <kbd>;</kbd>
+  - 前の文字 <kbd>.</kbd>
+  - 1ページ次<kbd>Ctrl</kbd> + <kbd>f</kbd>
+  - 1ページ前 <kbd>Ctrl</kbd> + <kbd>b</kbd>
+  - 半ページ次 <kbd>Ctrl</kbd> + <kbd>u</kbd>
+  - 半ページ前 <kbd>Ctrl</kbd> + <kbd>d</kbd>
+  - 画面最上部 <kbd>T</kbd>
+  - 画面中央 <kbd>M</kbd>
+  - 画面最下部 <kbd>L</kbd>
+  - ファイル先頭 <kbd>g</kbd> + <kbd>g</kbd>
+  - ファイル末尾 <kbd>G</kbd>
+
+- スクロール
+
+  - 上 <kbd>Ctrl</kbd> + <kbd>y</kbd>
+  - 下 <kbd>Ctrl</kbd> + <kbd>e</kbd>
+  - カーソル位置が画面中央 <kbd>z</kbd> + <kbd>z</kbd>
+  - カーソル位置が画面上部<kbd>z</kbd> + <kbd>t</kbd>
+  - カーソル位置が画面下部<kbd>z</kbd> + <kbd>b</kbd>
+
+- マーク
+  - カーソル位置をマークする <kbd>m</kbd> + \{a-zA-z\}
+  - 指定のマークに移動 ` + \{a-zA-z\}
+  - 指定のマークの行頭に移動 ' + \{a-zA-z\}
+  - 直前のマークに移動 <kbd>\`</kbd> + <kbd>\`</kbd>
+  - 古いマークに移動 <kbd>Ctrl</kbd> + <kbd>o</kbd>
+  - 新しいマークに移動 <kbd>Ctrl</kbd> + <kbd>i</kbd>
+
+---
+transition: slide-up
+level: 2
+---
+
+# 基本操作
+
+- ワード検索
+
+  - カーソル位置後方への検索 <kbd>/</kbd>
+  - カーソル位置前方への検索 <kbd>?</kbd>
+  - 次のワード <kbd>n</kbd>
+  - 前のワード<kbd>N</kbd>
+
+- 元に戻す
+  - 元に戻す(undo) <kbd>u</kbd>
+  - やり直し(redo) <kbd>Ctrl</kbd> + <kbd>r</kbd>
